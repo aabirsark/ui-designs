@@ -11,6 +11,7 @@ import 'package:uis/pages/fitness.page.dart';
 import 'package:uis/pages/home_hub.page.dart';
 import 'package:uis/pages/homely.page.dart';
 import 'package:uis/pages/job_search.page.dart';
+import 'package:uis/pages/job_search2.page.dart';
 import 'package:uis/pages/news.page.dart';
 import 'package:uis/pages/nfts.page.dart';
 import 'package:uis/pages/onboarding_.page.dart';
@@ -25,8 +26,8 @@ import 'package:uis/pages/zara.page.dart';
 void main() {
   runApp(const Uis());
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-      systemNavigationBarColor: Colors.white,
-      systemNavigationBarIconBrightness: Brightness.dark,
+      systemNavigationBarColor: Color(0xFF14171F),
+      systemNavigationBarIconBrightness: Brightness.light,
       statusBarColor: Colors.transparent));
 }
 
@@ -38,9 +39,9 @@ class Uis extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          fontFamily: GoogleFonts.nunito().fontFamily,
+          fontFamily: GoogleFonts.nunitoSans().fontFamily,
           scaffoldBackgroundColor: Colors.white),
-      home: const TodoList(),
+      home: const JobSearch2(),
     );
   }
 }
