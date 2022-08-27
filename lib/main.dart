@@ -13,6 +13,7 @@ import 'package:uis/pages/homely.page.dart';
 import 'package:uis/pages/job_search.page.dart';
 import 'package:uis/pages/job_search2.page.dart';
 import 'package:uis/pages/news.page.dart';
+import 'package:uis/pages/nft_page.dart';
 import 'package:uis/pages/nfts.page.dart';
 import 'package:uis/pages/onboarding_.page.dart';
 import 'package:uis/pages/online_education_app.page.dart';
@@ -26,8 +27,8 @@ import 'package:uis/pages/zara.page.dart';
 void main() {
   runApp(const Uis());
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-      systemNavigationBarColor: Color(0xFF14171F),
-      systemNavigationBarIconBrightness: Brightness.light,
+      systemNavigationBarColor: Colors.white,
+      systemNavigationBarIconBrightness: Brightness.dark,
       statusBarColor: Colors.transparent));
 }
 
@@ -39,9 +40,9 @@ class Uis extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          fontFamily: GoogleFonts.nunitoSans().fontFamily,
+          fontFamily: GoogleFonts.beVietnamPro().fontFamily,
           scaffoldBackgroundColor: Colors.white),
-      home: const JobSearch2(),
+      home: const NFTdesignPage(),
     );
   }
 }
