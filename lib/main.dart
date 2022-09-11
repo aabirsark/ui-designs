@@ -8,6 +8,7 @@ import 'package:uis/pages/expense.page.dart';
 import 'package:uis/pages/fashion_onboarding.page.dart';
 import 'package:uis/pages/find_cottage.page.dart';
 import 'package:uis/pages/fitness.page.dart';
+import 'package:uis/pages/freelance_tracker_app.page.dart';
 import 'package:uis/pages/home_hub.page.dart';
 import 'package:uis/pages/homely.page.dart';
 import 'package:uis/pages/job_search.page.dart';
@@ -19,6 +20,7 @@ import 'package:uis/pages/onboarding_.page.dart';
 import 'package:uis/pages/online_education_app.page.dart';
 import 'package:uis/pages/social_media.page.dart';
 import 'package:uis/pages/spotify_img_generator.page.dart';
+import 'package:uis/pages/todo.page.dart';
 import 'package:uis/pages/todo1.page.dart';
 import 'package:uis/pages/zara.page.dart';
 
@@ -40,9 +42,9 @@ class Uis extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          fontFamily: GoogleFonts.beVietnamPro().fontFamily,
+          fontFamily: GoogleFonts.montserrat().fontFamily,
           scaffoldBackgroundColor: Colors.white),
-      home: const NFTdesignPage(),
+      home: const FreeLanceTrackerApp(),
     );
   }
 }
