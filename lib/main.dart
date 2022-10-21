@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:uis/pages/cources.page.dart';
 import 'package:uis/pages/e_com.home.page.dart';
 import 'package:uis/pages/e_com_cart.page.dart';
 import 'package:uis/pages/ev_onoarding.page.dart';
 import 'package:uis/pages/expense.page.dart';
+import 'package:uis/pages/expenses.ui.dart';
 import 'package:uis/pages/fashion_onboarding.page.dart';
 import 'package:uis/pages/find_cottage.page.dart';
 import 'package:uis/pages/fitness.page.dart';
 import 'package:uis/pages/freelance_tracker_app.page.dart';
+import 'package:uis/pages/home_appliances.page.dart';
 import 'package:uis/pages/home_hub.page.dart';
 import 'package:uis/pages/homely.page.dart';
 import 'package:uis/pages/job_search.page.dart';
@@ -29,8 +32,8 @@ import 'package:uis/pages/zara.page.dart';
 void main() {
   runApp(const Uis());
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-      systemNavigationBarColor: Colors.white,
-      systemNavigationBarIconBrightness: Brightness.dark,
+      systemNavigationBarColor: Color(0xFF181818),
+      systemNavigationBarIconBrightness: Brightness.light,
       statusBarColor: Colors.transparent));
 }
 
@@ -42,9 +45,10 @@ class Uis extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        brightness: Brightness.dark,
           fontFamily: GoogleFonts.montserrat().fontFamily,
           scaffoldBackgroundColor: Colors.white),
-      home: const FreeLanceTrackerApp(),
+      home: const CourcesPage(),
     );
   }
 }
